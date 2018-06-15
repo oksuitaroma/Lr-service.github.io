@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'TTDrugs';
+    src: url('fonts/Drugs.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+div { 
+    color:#fff;
+}
+body{
+    font-family: 'TTDrugs', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+}
+
+
+
+/* --------------main------------------*/
+.main {
+    background: url(../img/header.jpg);  
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;    
+}
+.bg__image{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+.filter {
+    background-color: rgba(42, 50, 55, 0.9);
+    color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+}
+.filter h1 {
+    text-align: center;
+    border-bottom: 1px solid #353e42;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.form__input{
+    margin: 40px auto;
+    max-width: 550px;
+}
+.input__ls select {
+    width: 100%;    
+    height: 50px;
+    background-color: rgb(41, 50, 55);
+    color: #fff;
+    font-size: 20px;
+    border: rgb(53, 62, 66) solid 2px;
+    border-radius: 3px;
+    padding: 0px 10px;
+}
+.input__ls {
+    margin-top: 25px;
+}
+.input__ls button {
+    font-size: 18px;
+    background: rgb(62, 82, 94);
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    border: rgb(53, 62, 66) solid 1px;
+    border-radius: 3px;
+}
+.input__ls button:hover {
+    background: #31b9ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+

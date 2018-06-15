@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lr Service</title> 
+    <link rel="stylesheet" href="css/diagnostic__css/style.css">
+    <link rel="stylesheet" href="css/style(header-footer).css">
+    <link rel="stylesheet" href="css/diagnostic__css/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <div class="header__logo">
+                <a href="main.html"><img class="Logo" src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="header__nav">
+                <div class="nav__text">
+                    <img class="icon" src="img/2x/baseline_phone_white_18dp.png" alt="phone"> 
+                     Проконсультируйтесь у наших экспертов: <a href="#">067-508-38-68</a>, 
+                </div>
+                   <button class="open-modal" data-modal="modal1"> <span> Вход</span> </button>
+                    <div class="modal modal1">
+                        <div class="modal-content1">
+                            <span class="close" data-modal="modal1">&times;</span>
+                            <p>Регистрация</p>
+                        <form action="handler.php">
+                            <input type="text" name="name" placeholder="Введите ваше имя *">
+                            <input type="email" name="email" placeholder="Ваш email *">
+                            <select id="year">
+                                <option value="0">Марка автомобиля</option>
+                                <option value="Discovery Sport">Discovery Sport</option>
+                                <option value="1988">LR4</option>
+                                <option value="1989">Range Rover Evoque</option>
+                                <option value="1989">Range Rover Sport</option>
+                            </select>                            
+                            <button>Зарегистрироваться</button> 
+                        </form>
+                        </div>
+                    </div>
+                <nav>
+                    <div class="topnav">
+                        <ul>
+                            <li><a href="main.html">Главная</a></li>
+                            <li>
+                                <a  class="VIN" onclick="openSearch()" >Поиск по VIN коду   </a>
+                                <div id="search">
+                                    <input type="search" name="searchVIN" placeholder="Поиск по VIN коду">
+                                    <button>Найти</button> 
+                                </div> 
+                            </li>
+                            <li><a href="diagnostic.html">Запись на диагностику</a></li>
+                            <li><a href="antitheftsystem.html">Антиугонная система</a></li>
+                            <li><a href="#"> <img class="icon" src="img/shopping_cartM.png" alt="basket"></a> </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal__menu">
+                        <button class="open-modal" data-modal="modal2"> &equiv;</button>
+                        <div class="modal modal2">
+                            <div class="modal-content2">
+                                <span class="close" data-modal="modal2">&times;</span>
+                                <p>nav</p>
+                                <a href="main.html">Главная</a>
+                                <a href="#">Поиск по VIN коду</a>
+                                <a href="diagnostic.html">Запись на диагностику</a>
+                                <a href="antitheftsystem.html">Антиугонная система</a>
+                                <a href="#"> <img class="icon" src="img/shopping_cartM.png" alt="basket"></a>
+                                <input type="text" name="name" placeholder="Введите ваше имя *"> 
+                            </div>
+                        </div>
+                    </div>               
+                </nav>
+            </div>
+    </header>
+    <main>
+        <div class="navigator">
+            <a href="main.html">Главная</a> / <a href="diagnostic.html">Диагностика</a>
+        </div>
+        <div class="container">
+            <div class="main__title">
+                Запись на диагностику
+            </div>
+            <div class="main__content">
+                <div class="car">
+                    <img src="img/skelet1.png" alt="car">
+                </div>
+                <div class="services">
+                    <ul>
+                        <li><i class="fas fa-cog services__icon"></i>Техническое обслуживание автомобилей</li>
+                        <li><i class="fas fa-wrench services__icon"></i>Ремонт и диагностика ходовой</li>
+                        <li><i class="fas fa-share-alt services__icon"></i>ДВС и АКПП</li>
+                        <li><i class="fas fa-paint-brush services__icon"></i>Малярно-Кузовные работы</li>
+                        <li><i class="fas fa-shield-alt services__icon"></i>Электрика и Компьютерная диагностика</li>
+                        <li><i class="fas fa-plus services__icon"></i>Запчасти и Комплектующие</li>
+                        <li><i class="fas fa-plug services__icon"></i>СпецСервис</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="request">
+                <h1> Заявка на (Полную диагностику)</h1>
+                <form action="handler.php">
+                    <input type="text" name="name" placeholder="Введите ваше имя *">
+                    <input type="text" name="telephone number" placeholder="Ваш номер *">
+                    <input type="email" name="email" placeholder="Ваш email *">
+                    <input type="text" name="Model" placeholder="Модель автомобиля *">
+                    <input type="text" name="VIN code" placeholder="VIN код">
+                    <button>Отфильтровать</button> 
+                     
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__nav">
+                <a href="main.html">Главная</a>
+                <a href="#">Мой кабинет</a>
+                <a href="#">Возвраты и отмена</a>
+                <a href="#">Публичный договор</a>
+                <a href="#">О сервисе</a> 
+                <a href="diagnostic.html">Запись на диагностику</a>       
+            </div>
+            <div class="footer__container">
+                <div class="footer__networks">
+                    <p> Мы в соц сетях: </p>
+                    <a href="#"> <i class="fab fa-instagram networks__icon"></i></a>
+                    <a href="#"> <i class="fab fa-facebook-f networks__icon"></i></a>
+                    <p> Способы оплаты: </p>
+                    <a href="#"> <img  src="img/mastercard.png" alt="mastercard"></a>
+                    <a href="#"> <img  src="img/visa.png" alt="visa"></a>  
+
+                </div>
+                <div class="footer__about">
+                    LR-Service® является крупнейшим интернет-магазином в Украине OEM-оригинальных запчастей для Land Rover. 
+                    Наш онлайн-каталог включает более 300 тысяч уникальных «OEM» запчастей для Land Rover, 
+                    которые мы поставляем из Великобритании от различных современных крупных автомобильных производителей.
+                </div>
+                <div class="footer__contact">
+                    <p> Мы находимся по адресу:</p>
+                    <p>02093, г.Киев, ул.Бориспольская, 7, офис 112</p>
+                    <p> <a href="lr-service.com.ua">office@lr-service.com.ua</a></p>
+                    <p> <img class="icon" src="img/2x/baseline_phone_white_18dp.png" alt="phone">067-508-38-68</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>© 2017 Land Rover Service</span>
+                <a href="main.html"><img class="Logo" src="img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+</body>
+</html>
